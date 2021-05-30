@@ -37,36 +37,32 @@ $(document).ready(function(){
                 
                 if(centerArr.length !== 0){
                 
-                    
+                let currentCenter;
                 for(let i = 0;i<centerArr.length;i++){
                     sample = sample + `
                               <tr >
                                  <td>${centerArr[i].name}</td>
                                  <td>${centerArr[i].address}</td>
                                  <td>${centerArr[i].vaccine}</td>
-                                 <td><button class="btn" data-toggle="modal" data-target="#modalPincode">📌</button></td>
                               </tr>
                               `;    
-                              
+                            currentCenter=i;
                 }
-                
 
                 $('#current_status').html(` <h4>
                                             <span class="text-danger font-weight-bold">${centerArr.length}</span>
-                                            Vaccination centres available at 
+                                            Vaccination centers available at 
                                             <span class="text-danger"> ${centerArr[0].address}</span>
                                             </h4>
                                             <h5> from <span class="text-danger font-weight-bold"> ${centerArr[0].from} -  ${centerArr[0].to}</span></h5>`);
 
-                $('#status_table').html(`   <br>
-                                             <h4 class="text-center">To avail slots click on 📌 icon.</h4>
+                $('#status_table').html(` 
                                               <table class="table table-striped" style="width:100%;">
                                                <thead>
                                                   <tr>
                                                     <th>Center Name</th>
                                                     <th>Address</th>
                                                     <th>Vaccine</th>
-                                                    <th>Slots</th>
                                                   </tr>
                                                </thead>
                                                <tbody>
@@ -74,9 +70,11 @@ $(document).ready(function(){
                                                </tbody>
                                             </table>
                 `);
+
+
                 }else{
                     console.log("data not available");
-                    $('#current_status').html(`<h2 class="text-center">😕☹😕</h2>
+                    $('#current_status').html(`<h2 class="text-center">😕🙁😕</h2>
                     <h4>Sorry but we do not have data available for the location or the date you entered.</h4>`);
                     $('#status_table').html("");
                 }
