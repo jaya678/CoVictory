@@ -1,0 +1,101 @@
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #loading {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #000 url('https://flevix.com/wp-content/uploads/2020/01/Preloader.gif') no-repeat center;
+      z-index: 999999;
+    }
+
+    @keyframes bgChanger {
+      0% {
+        background-image: url("https://wrcb.images.worldnow.com/images/20124008_G.jpeg?lastEditedDate=1606818634000");
+      }
+
+      20% {
+        background-image: url("https://www.news-medical.net/image.axd?picture=2021%2F5%2Fshutterstock_735742660-1.jpg");
+      }
+
+      40% {
+        background-image: url("https://www.texasnurses.org/resource/resmgr/images/news_photos/ptow/PTOW_1-19-20_Nurse_Vacc_16x9.jpg");
+      }
+
+      60% {
+        background-image: url("https://wrcb.images.worldnow.com/images/20124008_G.jpeg?lastEditedDate=1606818634000");
+      }
+
+      80% {
+        background-image: url("https://www.news-medical.net/image.axd?picture=2021%2F5%2Fshutterstock_735742660-1.jpg");
+      }
+
+      100% {
+        background-image: url("https://www.texasnurses.org/resource/resmgr/images/news_photos/ptow/PTOW_1-19-20_Nurse_Vacc_16x9.jpg");
+      }
+    }
+
+    body {
+      background-color: #000;
+      background-image: url("https://www.texasnurses.org/resource/resmgr/images/news_photos/ptow/PTOW_1-19-20_Nurse_Vacc_16x9.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation-name: bgChanger;
+      animation-duration: 55s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-timing-function: cubic-bezier();
+    }
+
+    #jumboIn {
+      background-color: rgba(255, 253, 255, 0.8);
+      border-radius: 15px;
+      max-width: 800px;
+    }
+
+    .jumboIn>h1,
+    .jumboIn>h3 {
+      display: inline;
+      margin: 3px;
+
+    }
+
+    .jumboIn>h1 {
+      font-size: 4rem;
+    }
+
+    .jumboIn>h3 {
+      font-size: 2rem;
+    }
+
+    .card {
+      border-radius: 10px;
+      padding-bottom: 15px;
+    }
+     
+    @media screen and (max-width:900px) {
+      #jumboIn{
+        max-width: 80%;
+      }
+    }
+
+    @media screen and (max-width:600px) {
+    
+      .jumboIn>h1 {
+        font-size: 35px;
+      }
+
+      .jumboIn>h3 {
+        font-size: 22px;
+      }
+
+      .table-striped {
+        font-size: 14px;
+      }
+
+      #routeTable {
+        font-size: 12.5px;
+      }
+    }
