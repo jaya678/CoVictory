@@ -121,7 +121,7 @@ $(document).ready(function(){
 
                 $('#dist_status').html(` <h4>
                                             <span class="text-danger font-weight-bold">${centerArr.length}</span>
-                                            Vaccination centres available at 
+                                            Vaccination centers available at 
                                               <span class="text-danger"> ${district_name}</span>
                                             </h4>
                                             <h5> from <span class="text-danger font-weight-bold"> ${centerArr[0].from} -  ${centerArr[0].to}</span></h5>`);
