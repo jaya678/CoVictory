@@ -56,7 +56,7 @@ $(document).ready(function(){
                                             </h4>
                                             <h5> from <span class="text-danger font-weight-bold"> ${centerArr[0].from} -  ${centerArr[0].to}</span></h5>`);
 
-                $('#status_table').html(` 
+                $('#status_table').html(`     <div class="table-responsive">
                                               <table class="table table-striped" style="width:100%;">
                                                <thead>
                                                   <tr>
@@ -69,6 +69,7 @@ $(document).ready(function(){
                                                 ${sample}
                                                </tbody>
                                             </table>
+                                            </div>
                 `);
 
 
@@ -124,7 +125,8 @@ $(document).ready(function(){
                                             </h4>
                                             <h5> from <span class="text-danger font-weight-bold"> ${centerArr[0].from} -  ${centerArr[0].to}</span></h5>`);
 
-                $('#dist_table').html(`   <table class="table table-striped" style="width:100%;">
+                $('#dist_table').html(`   <div class="table-responsive">
+                                           <table class="table table-striped" style="width:100%;">
                                                <thead>
                                                   <tr>
                                                     <th>Center Name</th>
@@ -136,6 +138,7 @@ $(document).ready(function(){
                                                 ${sample}
                                                </tbody>
                                             </table>
+                                            </div>
                 `);
                 }else{
                     console.log("data not available");
@@ -191,7 +194,8 @@ $(document).ready(function(){
                                             <h5> from <span class="text-danger font-weight-bold"> ${centerArr[0].from} -  ${centerArr[0].to}</span></h5>
                                             <h4 class="text-right">Minimum Age limit : <span class="text-danger font-weight-bold">${centerArr[0].sessions[0].min_age_limit}</span></h4>`);
 
-                $('#pin7_table').html(`   <table class="table table-striped" style="width:100%;">
+                $('#pin7_table').html(`   <div class="table-responsive">
+                                               <table class="table table-striped" style="width:100%;">
                                                <thead>
                                                   <tr>
                                                     <th>Center Name</th>
@@ -203,6 +207,7 @@ $(document).ready(function(){
                                                 ${sample}
                                                </tbody>
                                             </table>
+                                            </div>
                 `);
                 }else{
                     console.log("data not available");
@@ -258,7 +263,8 @@ $(document).ready(function(){
                                             <h4 class="text-right">Minimum Age limit : <span class="text-danger font-weight-bold">${centerArr[0].sessions[0].min_age_limit}</span></h4>
                                             `);
 
-                $('#dist7_table').html(`   <table class="table table-striped" style="width:100%;">
+                $('#dist7_table').html(`   <div class="table-responsive">
+                                            <table class="table table-striped" style="width:100%;">
                                                <thead>
                                                   <tr>
                                                     <th>Center Name</th>
@@ -270,6 +276,7 @@ $(document).ready(function(){
                                                 ${sample}
                                                </tbody>
                                             </table>
+                                            </div>
                 `);
                 }else{
                     console.log("data not available");
