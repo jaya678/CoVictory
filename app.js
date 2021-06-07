@@ -39,10 +39,14 @@ $(document).ready(function(){
                                  <td>${centerArr[i].address}</td>
                                  <td>${centerArr[i].vaccine}</td>
                                  <td>${centerArr[i].min_age_limit}</td>
-                                 <td>${centerArr[i].slots[0]}</td>
-                                 <td>${centerArr[i].slots[1]}</td>
-                                 <td>${centerArr[i].slots[2]}</td>
-                                 <td>${centerArr[i].slots[3]}</td>
+                                 <td style="font-size:0.9em">
+                                 <ol>
+                                 <li>${centerArr[i].slots[0]}</li>
+                                 <li>${centerArr[i].slots[1]}</li>
+                                 <li>${centerArr[i].slots[2]}</li>
+                                 <li>${centerArr[i].slots[3]}</li>
+                                 </ol>
+                                 </td>
                               </tr>
                               `;   
                 }
@@ -62,10 +66,7 @@ $(document).ready(function(){
                                                     <th>Address</th>
                                                     <th>Vaccine</th>
                                                     <th>Min Age</th>
-                                                    <th>Slot 1</th>
-                                                    <th>Slot 2</th>
-                                                    <th>Slot 3</th>
-                                                    <th>Slot 4</th>
+                                                    <th>Available Slots</th>
                                                   </tr>
                                                </thead>
                                                <tbody>
@@ -117,6 +118,15 @@ $(document).ready(function(){
                                  <td>${centerArr[i].name}</td>
                                  <td>${centerArr[i].address}</td>
                                  <td>${centerArr[i].vaccine}</td>
+                                 <td>${centerArr[i].min_age_limit}</td>
+                                 <td style="font-size:0.9em">
+                                 <ol>
+                                 <li>${centerArr[i].slots[0]}</li>
+                                 <li>${centerArr[i].slots[1]}</li>
+                                 <li>${centerArr[i].slots[2]}</li>
+                                 <li>${centerArr[i].slots[3]}</li>
+                                 </ol>
+                                 </td>
                               </tr>
                               `;
                 }
@@ -135,6 +145,8 @@ $(document).ready(function(){
                                                     <th>Center Name</th>
                                                     <th>Address</th>
                                                     <th>Vaccine</th>
+                                                    <th>Min Age</th>
+                                                    <th>Available Slots</th>
                                                   </tr>
                                                </thead>
                                                <tbody>
@@ -185,6 +197,15 @@ $(document).ready(function(){
                                  <td>${centerArr[i].name}</td>
                                  <td>${centerArr[i].sessions[0].available_capacity}</td>
                                  <td>${centerArr[i].sessions[0].vaccine}</td>
+                                 <td>${centerArr[i].sessions[0].min_age_limit}</td>
+                                 <td style="font-size:0.9em">
+                                 <ol>
+                                 <li>${centerArr[i].sessions[0].slots[0]}</li>
+                                 <li>${centerArr[i].sessions[0].slots[1]}</li>
+                                 <li>${centerArr[i].sessions[0].slots[2]}</li>
+                                 <li>${centerArr[i].sessions[0].slots[3]}</li>
+                                 </ol>
+                                 </td>
                               </tr>
                               `;
                 }
@@ -195,7 +216,7 @@ $(document).ready(function(){
                                               <span class="text-danger"> ${address}</span>
                                             </h4>
                                             <h5> from <span class="text-danger font-weight-bold"> ${centerArr[0].from} -  ${centerArr[0].to}</span></h5>
-                                            <h4 class="text-right">Minimum Age limit : <span class="text-danger font-weight-bold">${centerArr[0].sessions[0].min_age_limit}</span></h4>`);
+                                            `);
 
                 $('#pin7_table').html(`   <div class="table-responsive">
                                                <table class="table table-striped" style="width:100%;">
@@ -204,6 +225,8 @@ $(document).ready(function(){
                                                     <th>Center Name</th>
                                                     <th>Available Quantity</th>
                                                     <th>Vaccine</th>
+                                                    <th>Min Age</th>
+                                                    <th>Available Slots</th>
                                                   </tr>
                                                </thead>
                                                <tbody>
@@ -249,10 +272,19 @@ $(document).ready(function(){
 
                 for(let i = 0;i<centerArr.length;i++){
                     sample = sample + `
-                              <tr>
+                              <tr >
                                  <td>${centerArr[i].name}</td>
                                  <td>${centerArr[i].sessions[0].available_capacity}</td>
                                  <td>${centerArr[i].sessions[0].vaccine}</td>
+                                 <td>${centerArr[i].sessions[0].min_age_limit}</td>
+                                 <td style="font-size:0.8em">
+                                 <ol>
+                                 <li>${centerArr[i].sessions[0].slots[0]}</li>
+                                 <li>${centerArr[i].sessions[0].slots[1]}</li>
+                                 <li>${centerArr[i].sessions[0].slots[2]}</li>
+                                 <li>${centerArr[i].sessions[0].slots[3]}</li>
+                                 </ol>
+                                 </td>
                               </tr>
                               `;
                 }
@@ -263,7 +295,6 @@ $(document).ready(function(){
                                               <span class="text-danger"> ${district}</span>
                                             </h4>
                                             <h5> from <span class="text-danger font-weight-bold"> ${centerArr[0].from} -  ${centerArr[0].to}</span></h5>
-                                            <h4 class="text-right">Minimum Age limit : <span class="text-danger font-weight-bold">${centerArr[0].sessions[0].min_age_limit}</span></h4>
                                             `);
 
                 $('#dist7_table').html(`   <div class="table-responsive">
@@ -273,6 +304,8 @@ $(document).ready(function(){
                                                     <th>Center Name</th>
                                                     <th>Available Quantity</th>
                                                     <th>Vaccine</th>
+                                                    <th>Min Age</th>
+                                                    <th>Available Slots</th>
                                                   </tr>
                                                </thead>
                                                <tbody>
