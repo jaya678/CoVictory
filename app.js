@@ -31,22 +31,20 @@ $(document).ready(function(){
                 let centerArr = data.sessions;
                 console.log(centerArr);
 
-                function test(a){
-                    console.log(a);
-                }
-                
                 if(centerArr.length !== 0){
-                
-                let currentCenter;
                 for(let i = 0;i<centerArr.length;i++){
                     sample = sample + `
                               <tr >
                                  <td>${centerArr[i].name}</td>
                                  <td>${centerArr[i].address}</td>
                                  <td>${centerArr[i].vaccine}</td>
+                                 <td>${centerArr[i].min_age_limit}</td>
+                                 <td>${centerArr[i].slots[0]}</td>
+                                 <td>${centerArr[i].slots[1]}</td>
+                                 <td>${centerArr[i].slots[2]}</td>
+                                 <td>${centerArr[i].slots[3]}</td>
                               </tr>
-                              `;    
-                            currentCenter=i;
+                              `;   
                 }
 
                 $('#current_status').html(` <h4>
@@ -63,6 +61,11 @@ $(document).ready(function(){
                                                     <th>Center Name</th>
                                                     <th>Address</th>
                                                     <th>Vaccine</th>
+                                                    <th>Min Age</th>
+                                                    <th>Slot 1</th>
+                                                    <th>Slot 2</th>
+                                                    <th>Slot 3</th>
+                                                    <th>Slot 4</th>
                                                   </tr>
                                                </thead>
                                                <tbody>
