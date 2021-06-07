@@ -39,8 +39,9 @@ $(document).ready(function(){
                                  <td>${centerArr[i].address}</td>
                                  <td>${centerArr[i].vaccine}</td>
                                  <td>${centerArr[i].min_age_limit}</td>
-                                 <td style="font-size:0.9em">
-                                 <ol>
+                                 <td style="font-size:0.9em" class="slotData">
+                                 📌
+                                 <ol class="slots">
                                  <li>${centerArr[i].slots[0]}</li>
                                  <li>${centerArr[i].slots[1]}</li>
                                  <li>${centerArr[i].slots[2]}</li>
@@ -119,8 +120,9 @@ $(document).ready(function(){
                                  <td>${centerArr[i].address}</td>
                                  <td>${centerArr[i].vaccine}</td>
                                  <td>${centerArr[i].min_age_limit}</td>
-                                 <td style="font-size:0.9em">
-                                 <ol>
+                                 <td style="font-size:0.9em" class="slotData">
+                                 📌
+                                 <ol class="slots">
                                  <li>${centerArr[i].slots[0]}</li>
                                  <li>${centerArr[i].slots[1]}</li>
                                  <li>${centerArr[i].slots[2]}</li>
@@ -198,8 +200,9 @@ $(document).ready(function(){
                                  <td>${centerArr[i].sessions[0].available_capacity}</td>
                                  <td>${centerArr[i].sessions[0].vaccine}</td>
                                  <td>${centerArr[i].sessions[0].min_age_limit}</td>
-                                 <td style="font-size:0.9em">
-                                 <ol>
+                                 <td style="font-size:0.9em" class="slotData">
+                                 📌
+                                 <ol class="slots">
                                  <li>${centerArr[i].sessions[0].slots[0]}</li>
                                  <li>${centerArr[i].sessions[0].slots[1]}</li>
                                  <li>${centerArr[i].sessions[0].slots[2]}</li>
@@ -277,8 +280,9 @@ $(document).ready(function(){
                                  <td>${centerArr[i].sessions[0].available_capacity}</td>
                                  <td>${centerArr[i].sessions[0].vaccine}</td>
                                  <td>${centerArr[i].sessions[0].min_age_limit}</td>
-                                 <td style="font-size:0.8em">
-                                 <ol>
+                                 <td style="font-size:0.8em" class="slotData">
+                                 📌
+                                 <ol class="slots">
                                  <li>${centerArr[i].sessions[0].slots[0]}</li>
                                  <li>${centerArr[i].sessions[0].slots[1]}</li>
                                  <li>${centerArr[i].sessions[0].slots[2]}</li>
